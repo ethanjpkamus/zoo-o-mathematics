@@ -7,13 +7,21 @@ listOfAnimals = [
     "hare",
     "lion",
     "camel",
+    "koala",
+    "lemur",
     "otter",
     "panda",
+    "sloth",
     "tiger",
+    "zebra",
     "dragon",
     "gorilla",
+    "jaguar",
     "penguin",
+    "ostrich",
     "serpent",
+    "orangutan",
+    "lochness monster"
 ]
 
 def getAnimal(num):
