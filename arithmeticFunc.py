@@ -1,5 +1,7 @@
 # Arithmetic Computational Game - Zoo-o-mathematics!
 import random 
+from util import *
+
 # --- function definitions ---
 # diff 1: 1, 2, 3, 4 (beginner)
 # diff 2: 5, 6, 7, 8 (intermediate)
@@ -22,12 +24,16 @@ def random_add1(loop):
         num2 = random.randint(1, 4)
         sol = num1 + num2
         print("What is {} + {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
 
 def random_add2(loop):
     num_correct = 0
@@ -36,9 +42,13 @@ def random_add2(loop):
         num2 = random.randint(5, 8)
         sol = num1 + num2
         print("What is {} + {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
     return num_correct / loop
@@ -50,12 +60,17 @@ def random_add3(loop):
         num2 = random.randint(9, 12)
         sol = num1 + num2
         print("What is {} + {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
+
 # -- subtraction ---
 def random_subtraction(d,loop):
     if d == 1:
@@ -75,12 +90,16 @@ def random_sub1(loop):
             num2 = random.randint(1, 4)
         sol = num1 - num2
         print("What is {} - {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
 
 def random_sub2(loop):
     num_correct = 0
@@ -91,12 +110,16 @@ def random_sub2(loop):
             num2 = random.randint(5, 8)
         sol = num1 - num2
         print("What is {} - {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
 
 def random_sub3(loop):
     num_correct = 0
@@ -107,12 +130,16 @@ def random_sub3(loop):
             num2 = random.randint(9, 12)
         sol = num1 - num2
         print("What is {} - {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
     
 # --- multiplication ---
 def random_multiplication(d, loop):
@@ -131,12 +158,16 @@ def random_mul1(loop):
         num2 = random.randint(1, 4)
         sol = num1 * num2
         print("What is {} * {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
 
 def random_mul2(loop):
     num_correct = 0
@@ -145,9 +176,13 @@ def random_mul2(loop):
         num2 = random.randint(5, 8)
         sol = num1 * num2
         print("What is {} * {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
     return num_correct / loop 
@@ -159,12 +194,16 @@ def random_mul3(loop):
         num2 = random.randint(9, 12)
         sol = num1 * num2
         print("What is {} * {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
 
 # --- division ---   
 def random_division(d,loop):
@@ -185,12 +224,16 @@ def random_div1(loop):
             num2 = random.randint(1, 4)
         sol = num1 / num2
         print("What is {} / {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
 
 def random_div2(loop):
     num_correct = 0
@@ -201,12 +244,16 @@ def random_div2(loop):
             num2 = random.randint(5, 8)
         sol = num1 / num2
         print("What is {} / {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
     
 def random_div3(loop):
     num_correct = 0
@@ -217,12 +264,16 @@ def random_div3(loop):
             num2 = random.randint(9, 12)
         sol = num1 / num2
         print("What is {} / {} ?".format(num1, num2))
-        if (sol == int(input("Enter your answer: "))):
-            print("Correct!")
-            num_correct += 1
+        user = input("Enter your answer: ")
+        if v_in(user):
+            if sol == int(user):
+                print("Correct!")
+                num_correct += 1
+            else:
+                print("Incorrect. The correct answer is: {}".format(sol))
         else:
             print("Incorrect. The correct answer is: {}".format(sol))
-    return num_correct / loop 
+    return num_correct / loop
     
 def random_mix(d, loop):
     result = 0
