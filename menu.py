@@ -16,4 +16,4 @@ def show_intro():
     print("5. All of the Above (+, -, x, ÷)")
     print("0. End Game")
     print("================================")
-    print("Please make a selection from the options listed above from 1 to 5.")
+    print("Please make a selection from the options listed above from 1 to 5 or 0 to end the game.")
